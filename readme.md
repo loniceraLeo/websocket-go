@@ -1,6 +1,6 @@
 # Websocket-go
 
-This is a brand new implementation of websocket-protocol for golang.It encapsulates serverl functions to make things easier.
+This is a brand new implementation of websocket-protocol for golang.It encapsulates several functions to make things easier.
 
 ## Download
 
