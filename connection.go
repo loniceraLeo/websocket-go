@@ -45,7 +45,7 @@ var data []byte
 
 //Read reads the network stream.Notice:If the type of the frame is text or
 //binary, it will return the buffer after several calls(maybe once).But
-//the buffer in the ping-pong frame will never be sent to users.
+//the application data in the ping-pong frame will never be sent to users.
 //Indeed, they will be processed as soon as they reach.
 func (conn *Conn) Read(p []byte) (d []byte, op byte, ok bool, err error) {
 	//if fin=true, the function return <data, true>, otherwise it returns <nil, false>
