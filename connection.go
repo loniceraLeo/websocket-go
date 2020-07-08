@@ -65,7 +65,6 @@ func (conn *Conn) Read(p []byte) (d []byte, op byte, ok bool, err error) {
 		return
 	}
 	if opcode == 9 {
-		fmt.Println("ping")
 		conn.SendPong(buf)
 		return nil, 9, false, nil
 	}
